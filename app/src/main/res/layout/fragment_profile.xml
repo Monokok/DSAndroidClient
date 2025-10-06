@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+    <!-- Компоненты для залогиненного пользователя -->
+    <TextView
+        android:id="@+id/userUserRoleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <!-- Аватар пользователя -->
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_profile_black_24"
+       />
+
+    <!-- Имя пользователя -->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя пользователя"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+         />
+
+    <!-- Email пользователя -->
+    <TextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+         />
+
+    <!-- Дата рождения пользователя -->
+    <TextView
+        android:id="@+id/tv_user_birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата рождения: 01.01.1990"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        />
+
+    <!-- Номер телефона пользователя -->
+    <TextView
+        android:id="@+id/tv_user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Телефон: +7 (123) 456-78-90"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        />
+
+    <!-- Компоненты для незалогиненного пользователя -->
+
+<!--    <TextView-->
+<!--        android:id="@+id/loginPromptTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="-60dp"-->
+<!--        android:text="@string/loginInAccount_label"-->
+<!--        android:visibility="gone"-->
+
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/loginButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/loginButton_hint"-->
+<!--        android:visibility="gone"-->
+<!--        />-->
+    <TextView
+        android:id="@+id/errorTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+
+    </TextView>
+
+    <Button
+        android:id="@+id/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logoutButton_hint"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginButton_hint"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerButton_hint"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Выбор преподавателя -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обучающийся"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+    <Spinner
+        android:id="@+id/sp_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Выберите обучающегося"
+       />
+
+<!--    &lt;!&ndash; Выбор категории &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Категория"-->
+<!--        android:textSize="16sp"-->
+<!--        android:paddingTop="16dp"-->
+<!--        android:paddingBottom="8dp" />-->
+<!--    <Spinner-->
+<!--        android:id="@+id/sp_category"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:entries="@array/lesson_categories" />-->
+
+    <!-- Выбор даты -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дата"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Выберите дату"
+        android:focusable="false"
+        android:inputType="date" />
+
+    <!-- Выбор времени -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Время"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+    <Spinner
+        android:id="@+id/sp_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Выберите время" />
+
+    <!-- Кнопка создания -->
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Создать"
+        android:enabled="true" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lesson_categories">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+    <!-- Роли -->
+    <string-array name="roles_array">
+        <item>Обучающийся</item>
+        <item>Преподаватель</item>
+    </string-array>
+</resources>

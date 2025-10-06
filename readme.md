@@ -15,7 +15,7 @@ Android-приложение для автошколы с возможность
 
 ## Технологии
 
-- **Kotlin / Java** (укажи, что используется)
+- **Kotlin /**
 - **Android Jetpack** (ViewModel, LiveData, Room и т.д.)
 - **Retrofit / OkHttp** для работы с API
 - **Material Design Components**
